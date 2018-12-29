@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+	<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+	<view class="title">
+    <h3 style="">我的收藏</h3>
+  </view>
+
+  <view class="collection-list">
+  	<view class="item-card" wx:for="{{collectionList}}" wx:key="unique" wx:for-item="player" data-itemid="{{player.id}}" bindtap="gotoPageDetail">
+      <view>
+      	<image class="header" src="{{player.src}}"/>
+      </view>
+      <view class="info">
+        <h4>{{player.name}}</h4>
+      </view>
+    </view>
+  </view>
+
+</view>
+

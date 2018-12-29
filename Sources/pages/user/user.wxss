@@ -1,0 +1,64 @@
+/* pages/user/user.wxss */
+.user_info{
+	margin: 0 1rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: #eee;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.title{
+	margin-top:1rem; text-align:center;
+}
+
+.title h3{
+	font-size: 16px; font-weight: bold;
+}
+
+.collection-list{
+	margin-top:0.5rem; padding:0 1rem;
+	display:flex;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+}
+
+.item-card{
+	width:33.333333%;
+	display:flex;
+	flex-direction:column;
+	position: relative;
+	margin-bottom:15px;
+	padding: 1rem 0rem 0 0rem;
+	align-items:center;
+	box-sizing:border-box;
+
+}
+
+.item-card .header{
+	display: inline-block; vertical-align: middle; width: 80px; height: 102px
+}
+
+.item-card .info{
+	margin-top: 0.2rem;
+	display: inline-block;
+    vertical-align: middle;
+    color: #242424;
+    font-size: 14px;    
+}
+

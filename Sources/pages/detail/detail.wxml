@@ -1,0 +1,30 @@
+<!--pages/detail.wxml-->
+<view class="container">
+	<view class="bannerphoto_wrapper">
+		<image class="header" src="{{playerInfo.headphoto}}"/>
+	</view>
+
+	<view class="listinfo_wrapper">
+		<view class="item">
+			<view class="inline label">姓名</view> 
+			<view class="inline text">{{playerInfo.name}}</view>
+		</view>
+		<view class="item">
+			<view class="inline label">国籍</view> 
+			<view class="inline text">{{playerInfo.national}}</view>
+		</view>
+		<view class="item">
+			<view class="inline label">位置</view> 
+			<view class="inline text">{{playerInfo.position}} {{playerInfo.number}}号</view>
+		</view>
+	</view>
+
+	<view class="info_wrapper">
+		<rich-text class="info" nodes="{{playerInfo.info}}"></rich-text>
+	</view>
+
+	<view class="button_wrapper {{isIphoneX ? 'p-iphonex' : ''}}">
+		<button wx:if="{{collected==false}}" type="primary" size="mini" bindtap="clickCollect">收藏</button>
+		<button wx:if="{{collected==true}}" type="default" size="mini" bindtap="clickCollect">已收藏</button>
+	</view>
+</view>

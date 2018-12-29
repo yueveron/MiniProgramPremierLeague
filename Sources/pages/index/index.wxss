@@ -1,0 +1,65 @@
+/**index.wxss**/
+.usermotto {
+  margin-top: 0px;
+}
+
+.auto-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.page-title{
+	margin-top:20px; text-align:center;
+}
+
+.page-title h3{
+	font-size: 16px; font-weight: bold;
+}
+
+.item-list{
+	margin-top:10px; padding:0px 20px;
+}
+
+.item-card{
+	display: block;
+	position: relative;
+	margin-bottom:15px;
+	padding: 1rem 1rem 0 1rem;
+	background-color:#eaeaea;
+	border: 1px solid #e8e8e8;
+	background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-image: url(http://veron.tirozhang.com/miniprogram/premier_league/images/stats-card.png);
+}
+
+.item-card .header{
+	display: inline-block; vertical-align: middle; width: 96px; height: 122px
+}
+
+.item-card .info{
+	position: absolute;
+    right: 1rem;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    color: #242424;    
+}
+
+.item-card span{
+	display: block;
+}
+
+.item-card span.xs{
+	font-size: 15px;
+}
+
+.item-card span.xxs{
+	font-size: 12px;
+}
+
+.item-card h4{
+	display: block;
+	font-size: 18px; font-weight: bold;
+	margin: 5px 0;
+}

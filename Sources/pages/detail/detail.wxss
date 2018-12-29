@@ -1,0 +1,79 @@
+page{
+	background-color: #F2F7FA;
+}
+
+.button_wrapper{
+	padding: 10px 20px 5px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.p-iphonex{
+  padding-bottom: 40px;
+}
+
+.bannerphoto_wrapper{
+	height: 250px;
+    background-color: #eaeaea;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    
+}
+
+.bannerphoto_wrapper .header{
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 112px);
+	width: 224px; height: 224px;
+    display: inline-block; 
+}
+
+.listinfo_wrapper{
+	background-color: #FFFFFF;
+	margin-bottom: 1rem;
+}
+
+.listinfo_wrapper .item{
+	border-bottom: 1px solid #EDEDED;
+    overflow: hidden;
+    padding: 12px 36px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.listinfo_wrapper .label{
+	float: left;
+	color: #012960;
+}
+
+.listinfo_wrapper .text{
+	float: right;
+}
+
+.info_wrapper{
+	padding: 2rem 1rem 4rem;
+	background-color: #FFFFFF;
+}
+
+
+
+.title{
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.para{
+  margin-bottom: 1rem;
+  line-height: 2;
+  font-size: 0.8rem;
+  color: #6F6F6F;
+  text-align: justify;
+}
